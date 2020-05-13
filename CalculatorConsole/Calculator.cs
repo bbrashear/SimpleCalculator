@@ -8,7 +8,6 @@ namespace CalculatorConsole
     {
         public double Arithmetic(double num1, string operand, double num2)
         {
-            double answer = 0;
             switch(operand)
             {
                 case "+":
@@ -18,9 +17,9 @@ namespace CalculatorConsole
                 case "*":
                     return num1 * num2;
                 case "/":
-                    return num2 != 0 ? answer = num1 / num2 : 0;
+                    return num2 != 0 ? num1 / num2 : 0;
                 default:
-                    return answer = 0;
+                    return 0;
             }
         }
 
